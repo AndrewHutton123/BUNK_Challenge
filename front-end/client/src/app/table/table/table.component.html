@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Expenses Table</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Expense</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.amount}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
